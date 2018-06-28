@@ -1,0 +1,9 @@
+import "tfplan"
+
+main = rule {
+  all tfplan.resources.azurerm_resource_group as _, group {
+    all group as _, g {
+      (length(g.applied.tags) else 0) > 0
+    }
+  }
+}
