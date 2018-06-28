@@ -1,4 +1,4 @@
 locals {
-  prefix   = "tom"
+  prefix   = "tomtom"
   location = "West Europe"
 }
